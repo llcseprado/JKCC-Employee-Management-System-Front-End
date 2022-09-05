@@ -1,0 +1,51 @@
+nav {
+  position: fixed;
+  z-index: 999;
+}
+
+/* #c {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  left: 0px;
+  top: 18px;
+
+  background: rgba(149, 230, 86, 0.68);
+  filter: blur(103px);
+}
+
+#c2 {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  left: 916px;
+  top: 114px;
+
+  background: rgba(149, 230, 86, 0.68);
+  filter: blur(103px);
+}
+
+#c3 {
+  position: absolute;
+  width: 310px;
+  height: 242.62px;
+  left: 470px;
+  top: 571px;
+
+  background: rgba(149, 230, 86, 0.68);
+  filter: blur(103px);
+} */
+
+li.nav-item {
+  font-family: fantasy;
+  font-size: Large;
+}
+
+table {
+  z-index: 999;
+}
+
+div.container {
+  background-color: rgb(211, 201, 201);
+  z-index: 999;
+}
