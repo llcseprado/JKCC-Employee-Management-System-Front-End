@@ -126,7 +126,7 @@
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   display: inline;
   justify-content: space-around;
