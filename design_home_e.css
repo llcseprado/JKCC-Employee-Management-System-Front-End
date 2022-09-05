@@ -203,6 +203,8 @@ button {
   background: #777;
   color: white;
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -211,4 +213,10 @@ button {
   left: 0;
   right: 0;
   padding-bottom: 50px;
+}
+
+.emp {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  font-size: small;
 }

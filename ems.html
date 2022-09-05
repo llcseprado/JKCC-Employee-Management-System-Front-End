@@ -128,20 +128,38 @@
           </button>
         </div>
 
+        <div>
+          <p class="emp">Employee name</p>
+          <button>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </button>
+        </div>
+
         <div></div>
       </nav>
     </section>
 
     <section>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div
+            class="carousel-item active"
+            style="background-image: url(/assets/jkcc_vid.png)"
+          >
             -
-            <div class="container">
+            <!-- <div class="container">
               <h1>whee_inthemood</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
@@ -150,11 +168,11 @@
                 maxime nisi asperiores?
               </p>
               <a href="#" class="btn btn-lg btn-primary">Sign up Today</a>
-            </div>
+            </div> -->
           </div>
           <div class="carousel-item">
             -
-            <div class="container">
+            <!-- <div class="container">
               <h1>dfffd</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
@@ -163,16 +181,26 @@
                 maxime nisi asperiores?
               </p>
               <a href="#" class="btn btn-lg btn-primary">Sign up Today</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <a
           href="#myCarousel"
           class="carousel-control-prev"
           role="button"
-          data-slide="prev"
+          data-bs-slide="prev"
         >
           <span class="sr-only">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a
+          href="#myCarousel"
+          class="carousel-control-next"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="sr-only">Previous</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </section>
