@@ -49,11 +49,16 @@ nav {
   font-size: small;
 }
 
-.nav-links a.active {
+.nav-links div {
+  text-align: center;
+}
+
+.nav-links div.active {
   /* opacity: 0.6; */
-  text-decoration: underline;
-  color: #2196f3;
-  text-decoration-color: #2196f3;
+  /* text-decoration: underline;
+  text-decoration-color: #2196f3; */
+  background-color: rgba(33, 150, 243, 0.48);
+  opacity: 0.6;
   /* text-decoration-thickness: ; */
 }
 
