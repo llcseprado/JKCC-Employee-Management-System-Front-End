@@ -1,28 +1,28 @@
-/* * {
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-} */
+}
 
 body {
   background-color: #f2f2f2;
   padding-top: 1px;
 }
 
+/*Navigation bar style*/
 nav {
   margin: 0px;
   position: fixed;
-  /* z-index: 999; */
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-height: 8vh;
   min-width: 100%;
-  /* background-color: #e9e9e9; */
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #2b8ad6;
   font-family: "Ubuntu";
   font-weight: 600;
-  /* font-size: small; */
   box-shadow: 0px 3.40456px 3.40456px rgba(0, 0, 0, 0.24);
 }
 
@@ -44,26 +44,39 @@ nav {
 }
 
 .nav-links a {
-  color: rgba(0, 0, 0, 0.6);
+  /* color: rgba(0, 0, 0, 0.6); */
   text-decoration: none;
-  font-size: small;
+  font-size: 12px;
+  color: #bfdcf3;
 }
 
 .nav-links div {
   text-align: center;
 }
 
-.nav-links div.active {
-  /* opacity: 0.6; */
-  /* text-decoration: underline;
-  text-decoration-color: #2196f3; */
-  background-color: rgba(33, 150, 243, 0.48);
-  opacity: 0.6;
-  /* text-decoration-thickness: ; */
+div.active {
+  /* background-color: rgba(33, 150, 243, 0.48);
+  opacity: 0.6; */
+  /*color: #2196f3;
+  text-decoration-color: #2196f3;
+  text-decoration: underline;
+  text-decoration-thickness: 3px; */
+  color: white;
 }
 
-.nav-links :hover {
-  color: #2196f3;
+.nav-links div:hover {
+  /* color: #2196f3;
+
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #2196f3; */
+  /* background-color: rgba(33, 150, 243, 0.48);
+  opacity: 0.6; */
+  color: white;
+}
+
+.nav-links div {
+  width: 30%;
 }
 
 button {
@@ -79,7 +92,6 @@ button {
 
 .tabol {
   margin-top: 60px;
-  /* background-color: rgb(255, 255, 255); */
   z-index: 999;
 }
 
@@ -87,4 +99,8 @@ input {
   border: none;
   border: solid 1px #ccc;
   border-radius: 50px;
+}
+
+.container {
+  background-color: white;
 }
