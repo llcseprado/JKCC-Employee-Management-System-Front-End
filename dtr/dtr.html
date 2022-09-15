@@ -24,68 +24,74 @@
     <link href="/dtr/dtr.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <script type="text/javascript"> 
+      function display_c(){
+      var refresh=1000; // Refresh rate in milli seconds
+      mytime=setTimeout('display_ct()',refresh)
+      }
+      
+      function display_ct() {
+      var x = new Date()
+      document.getElementById('ct').innerHTML = x;
+      display_c();
+       }
+      </script>
   </head>
 
-<body>
+<body onload=display_ct();>
   <section>
-  <div class="container">
-    <nav class="nv">
+    <div class="master-nav-div">
       <div class="logo">
-        <h6>EMPLOYEE MANAGEMENT SYSTEM</h6>
+        <p class="ems">Employee Management System</p>
       </div>
 
-      <ul class="nav-links">
-       <div>
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <li><a href="/ems.html">HOME</a></li>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a href="/ems.html">Home</a>
+        <a href="/dtr/dtr.html" class="active">Daily Time Record</a>
+        <a href="/attendance/attendance.html">Attendance</a>
+        <a href="/penalties/late-penalties.html">Late Penalties</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-        <div   class="active">
-          <i class="fa fa-clock-o" aria-hidden="true"></i>
-          <li><a href="/dtr/dtr.html">Daily Time Record</a></li>
-        </div>
-        
-        <div>
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-          <li><a href="/attendance/attendance.html">Attendance Record</a></li>
-        </div>
-        <div>
-          <i class="fa fa-exclamation" aria-hidden="true"></i>
-          <li>
-            <a href="/penalties/late-penalties.html">Late Penalties</a>
-          </li>
-        </div>
-      
-      </ul>
-      <div class="search--btn">
-        <input type="text" placeholder="Search" id="search-bar" />
+      <div class="search-bar-div">
         <button type="submit" class="search-btn">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
+        <input class="searchBar" type="text" placeholder="Search" />
       </div>
+      <!-- 
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> -->
 
       <div class="dropdown">
-        <button
-          class="btn btn-primary dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <button onclick="myFunction()" class="dropbtn">
+          <i class="fa fa-user" aria-hidden="true"></i>
         </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">See Profile</a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Logout</a></li>
-        </ul>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">My Profile</a>
+          <a href="#">Log Out</a>
+        </div>
       </div>
-    </nav>
-</div>
-  
+    </div>
+  </section>
+
+  <section>
+    <div id='ct'>
+
+    </div>
   </section>
 
 
-
+<section>
     <div class="tabol">
       <table class="table mx-5">
         <thead>
@@ -121,7 +127,7 @@
         </tbody>
       </table>
   </div>
-
+</section>
 
 
     <script
