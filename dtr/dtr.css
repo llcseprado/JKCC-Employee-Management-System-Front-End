@@ -162,13 +162,13 @@ body {
 
 /* parent div */
 .headerr {
-  margin-bottom: 5px;
+  margin-bottom: 0.3px;
   border-radius: 5px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   border-bottom: 1.5px solid #dee2e6;
 }
 
@@ -234,8 +234,14 @@ body {
 
 .tbl_row {
   background-color: white;
-  height: 4rem;
+  height: 5rem; /*4rem*/
   text-align: center;
+  /* display: flex; */
+  justify-content: center;
+}
+
+td {
+  vertical-align: middle;
 }
 
 .table tr > :nth-child(5):not(th) {
