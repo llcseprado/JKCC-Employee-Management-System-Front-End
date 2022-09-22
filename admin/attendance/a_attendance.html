@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Attendance</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/admin/attendance/a_attendance.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section>
+      <div class="master-nav-div">
+        <div class="logo">
+          <p class="ems">Employee Management System</p>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+          <a href="/ems.html">Home</a>
+          <a href="/admin/dtr/a_dtr.html">Daily Time Record</a>
+          <a href="/admin/attendance/a_attendance.html" class="active"
+            >Attendance</a
+          >
+          <a href="/admin/profile/a_profiles.html">Profiles</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+        <div class="search-bar-div">
+          <button type="submit" class="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <input class="searchBar" type="text" placeholder="Search" />
+        </div>
+        <!-- 
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> -->
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">My Profile</a>
+            <a href="#">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tabol">
+        <table class="table table-hover">
+          <thead>
+            <tr class="theader">
+              <th scope="col">Employee Name</th>
+              <th scope="col">Position</th>
+              <th scope="col">Attendance Record</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tbl_row">
+              <td scope="row">Romena June Seprado</td>
+              <td scope="row">Cashier</td>
+              <td>
+                <button onclick="gotorecord()" class="record">
+                  Go to Record
+                </button>
+              </td>
+            </tr>
+
+            <tr class="tbl_row">
+              <td scope="row">Winter autumn spring</td>
+              <td scope="row">Cashier</td>
+              <td>
+                <button onclick="gotorecord()" class="record">
+                  Go to Record
+                </button>
+              </td>
+            </tr>
+
+            <tr class="tbl_row">
+              <td scope="row">Louise Lynne Seprado</td>
+              <td scope="row">Cashier</td>
+              <td>
+                <button onclick="gotorecord()" class="record">
+                  Go to Record
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
